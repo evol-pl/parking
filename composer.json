@@ -1,0 +1,8 @@
+{
+    "name": "parking/site",
+    "description": "Under construction page",
+    "type": "project",
+    "require": {
+        "php": ">=8.0"
+    }
+}
