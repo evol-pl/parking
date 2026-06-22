@@ -15,6 +15,15 @@ header("Content-Security-Policy: frame-ancestors 'none'");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
     <title>Under Construction</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-91RY6F3YD8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-91RY6F3YD8');
+    </script>
     <script>
         if (window !== window.top) {
             window.top.location.href = window.location.href;
