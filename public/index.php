@@ -14,7 +14,7 @@ header("Content-Security-Policy: frame-ancestors 'none'");
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
-    <title>Under Construction</title>
+    <title><?= htmlspecialchars($_SERVER['HTTP_HOST']) ?> — Under Construction</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-91RY6F3YD8"></script>
     <script>
@@ -61,9 +61,15 @@ header("Content-Security-Policy: frame-ancestors 'none'");
             color: #fff;
         }
 
-        p {
+        .subtitle {
             font-size: 1rem;
             color: #888;
+            margin-bottom: 0.5rem;
+        }
+
+        p {
+            font-size: 0.9rem;
+            color: #666;
             max-width: 320px;
             line-height: 1.6;
         }
@@ -72,7 +78,8 @@ header("Content-Security-Policy: frame-ancestors 'none'");
 <body>
     <div class="container">
         <span class="icon">🚧</span>
-        <h1>Under Construction</h1>
+        <h1><?= htmlspecialchars($_SERVER['HTTP_HOST']) ?></h1>
+        <p class="subtitle">Under Construction</p>
         <p>Strona jest w trakcie budowy. Wróć wkrótce.</p>
     </div>
 </body>
